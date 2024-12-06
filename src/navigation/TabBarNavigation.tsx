@@ -1,8 +1,8 @@
-import HomeScreen from "@/screens/HomeScreen";
-import PicturesListScreen from "@/screens/PicturesListScreen";
 import React from "react";
 import { createMaterialBottomTabNavigator } from "react-native-paper/react-navigation";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import HomeScreen from "../screens/HomeScreen";
+import PicturesListScreen from "../screens/PicturesListScreen";
 
 const Tab = createMaterialBottomTabNavigator();
 

@@ -1,9 +1,9 @@
-import { NasaPictureType } from "@/types/NasaPictureType";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import * as Sharing from "expo-sharing";
 import { cacheDirectory, downloadAsync } from "expo-file-system";
 import ImageView from "react-native-image-viewing";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { NasaPictureType } from "../types/NasaPictureType";
 
 type Props = {
   image: NasaPictureType;

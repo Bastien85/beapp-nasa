@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
-import { mockNasaPicture } from "@/types/NasaPictureType";
 import NasaPicture from "../NasaPicture";
+import { mockNasaPicture } from "@/src/types/NasaPictureType";
 
 jest.mock("react-native-image-viewing");
 

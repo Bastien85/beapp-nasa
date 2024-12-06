@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LayoutContainer from "@/components/LayoutContainer";
+import LayoutContainer from "@/src/components/LayoutContainer";
 import {
   Text,
   StyleSheet,
@@ -9,9 +9,9 @@ import {
   RefreshControl,
   useWindowDimensions,
 } from "react-native";
-import { fetchDailyPicture } from "@/actions/NasaActions";
-import { NasaPictureType } from "@/types/NasaPictureType";
-import NasaPicture from "@/components/NasaPicture";
+import NasaPicture from "@/src/components/NasaPicture";
+import { NasaPictureType } from "../types/NasaPictureType";
+import { fetchDailyPicture } from "../actions/NasaActions";
 
 export default function HomeScreen() {
   const [dailyPicture, setDailyPicture] = useState<NasaPictureType>();

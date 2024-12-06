@@ -1,6 +1,6 @@
-import { NasaPictureType } from "@/types/NasaPictureType";
 import { useState } from "react";
 import { TouchableHighlight, Image, StyleSheet } from "react-native";
+import { NasaPictureType } from "../types/NasaPictureType";
 import ImageViewer from "./ImageViewer";
 
 type Props = {

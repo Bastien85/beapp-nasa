@@ -1,5 +1,5 @@
-import { NasaPictureType } from "@/types/NasaPictureType";
-import { formatDate } from "@/utils/DateUtils";
+import { NasaPictureType } from "../types/NasaPictureType";
+import { formatDate } from "../utils/DateUtils";
 
 const API_KEY = "l21YJ2gfkCjnS1ThY7wha4ryclgMvxylj9Rfj9zl";
 

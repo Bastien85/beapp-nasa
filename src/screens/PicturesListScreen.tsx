@@ -1,7 +1,4 @@
-import { fetchPictureFromDate, fetchPicturesList } from "@/actions/NasaActions";
-import LayoutContainer from "@/components/LayoutContainer";
-import { NasaPictureType } from "@/types/NasaPictureType";
-import { substractDays } from "@/utils/DateUtils";
+import LayoutContainer from "@/src/components/LayoutContainer";
 import { useCallback, useEffect, useState } from "react";
 import {
   StyleSheet,
@@ -13,9 +10,15 @@ import {
   Alert,
   ScrollView,
 } from "react-native";
-import NasaPicture from "@/components/NasaPicture";
-import ImageViewer from "@/components/ImageViewer";
-import DatePickerButton from "@/components/DatePickerButton";
+import NasaPicture from "@/src/components/NasaPicture";
+import ImageViewer from "@/src/components/ImageViewer";
+import DatePickerButton from "@/src/components/DatePickerButton";
+import { NasaPictureType } from "../types/NasaPictureType";
+import { substractDays } from "../utils/DateUtils";
+import {
+  fetchPictureFromDate,
+  fetchPicturesList,
+} from "../actions/NasaActions";
 
 export default function PicturesListScreen() {
   const today = new Date();
